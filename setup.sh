@@ -68,7 +68,7 @@ install_binary() {
 
   mkdir -p "$INSTALL_DIR"
   local bin
-  bin=$(find "$tmp" -maxdepth 2 -type f -name 'cliproxyapi*' | head -1)
+  bin=$(find "$tmp" -maxdepth 2 -type f \( -name 'cli-proxy-api*' -o -name 'cliproxyapi*' \) -perm -u+x | head -1)
   [ -n "$bin" ] || err "binary not found in archive"
   install -m 0755 "$bin" "${INSTALL_DIR}/cliproxyapi"
   rm -rf "$tmp"
