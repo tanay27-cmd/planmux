@@ -1,4 +1,4 @@
-# proxycli
+# planmux
 
 Local proxy that turns your **Claude** and **ChatGPT** plan logins into an
 OpenAI/Anthropic/Gemini-compatible API endpoint, so coding agents and scripts
@@ -16,8 +16,8 @@ SDK docs, and contributor list.
 ## Quick start (for an agent)
 
 ```bash
-git clone https://github.com/tanay27-cmd/proxycli.git
-cd proxycli
+git clone https://github.com/tanay27-cmd/planmux.git
+cd planmux
 bash setup.sh
 ```
 

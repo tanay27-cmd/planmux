@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# proxycli — install CLIProxyAPI and authenticate Claude + Codex via OAuth so
+# planmux — install CLIProxyAPI and authenticate Claude + Codex via OAuth so
 # a single local endpoint serves Claude and OpenAI requests billed to your
 # Claude/ChatGPT subscriptions instead of API credit.
 
@@ -124,7 +124,7 @@ print_summary() {
   cat <<EOF
 
 ==========================================================
-  proxycli is ready
+  planmux is ready
 
   Base URL : http://${HOST}:${PORT}
   API key  : ${key}
